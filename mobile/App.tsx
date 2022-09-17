@@ -10,7 +10,7 @@ import {
 } from '@expo-google-fonts/inter';
 
 import { Background, Loading } from './src/components';
-import { Home } from './src/screens';
+import { Routes } from './src/routes';
 
 const App: React.FC = () => {
   const [fontsLoaded] = useFonts({
@@ -27,7 +27,7 @@ const App: React.FC = () => {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Home /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </Background>
   );
 };
